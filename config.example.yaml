@@ -1,0 +1,29 @@
+# TokenAsh Configuration
+# Copy this file to config.yaml and fill in your API keys
+
+# OpenAI Configuration
+openai:
+  enabled: true
+  api_key: "YOUR_OPENAI_API_KEY"  # Or set OPENAI_API_KEY env var
+
+# Anthropic (Claude) Configuration
+anthropic:
+  enabled: true
+  api_key: "YOUR_ANTHROPIC_API_KEY"  # Or set ANTHROPIC_API_KEY env var
+
+# Chart Configuration
+chart:
+  days: 30  # Number of days to show in the chart
+  title: "🔥 Token Consumption (Last 30 Days)"
+  
+# GitHub Profile Integration
+github:
+  # Your profile repo (usually yourusername/yourusername)
+  profile_repo: "yourusername/yourusername"
+  # Branch to push to
+  branch: "main"
+  # Path to the README file
+  readme_path: "README.md"
+  # Custom section marker in README (chart will be inserted between these markers)
+  section_start: "<!-- TOKENASH:START -->"
+  section_end: "<!-- TOKENASH:END -->"
