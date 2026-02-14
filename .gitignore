@@ -36,7 +36,5 @@ config.yaml
 .env
 *.log
 
-# Keep data and charts directories but ignore contents (for now)
-# These will be tracked when user runs the tool
-data/*.json
-charts/*.png
+# User-specific config
+config.yaml
